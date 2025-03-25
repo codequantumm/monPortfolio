@@ -40,8 +40,8 @@ function createSkillsFromJSON() {
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
-                            <img src="./images/${item.image}" />
-                            <h4 class="card-title mt-3">${item.title}</h4>
+                            <img src="./images/${item.image}" alt="${item.title}" loading="lazy" width="100%" height="150px" "/>
+                            <h3 class="card-title mt-3">${item.title}</h3>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>
                     </div>
@@ -75,9 +75,11 @@ function createPortfolioFromJSON() {
                 card.classList.add("col-lg-4", "mt-4");
                 card.innerHTML = `
                     <div class="card portfolioContent">
-                    <img class="card-img-top" src="images/${item.image}" style="width:100%">
+                    <div class="image-container">
+                    <img class="card-img-top" src="images/${item.image}" alt="${item.title}" loading="lazy"/>
+                    </div>
                     <div class="card-body">
-                        <h4 class="card-title">${item.title}</h4>
+                        <h3 class="card-title">${item.title}</h3>
                         <p class="card-text">${item.text}</p>
                         <div class="text-center">
                             <a href="${item.link}" class="btn btn-success">Lien</a>
