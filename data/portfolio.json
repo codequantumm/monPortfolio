@@ -2,19 +2,40 @@
     {
         "image": "image1.png",
         "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Intégration du site Booki en HTML et CSS afin de permettre aux utilisateurs de trouver des hébergements et activités, en suivant une maquette et des spécifications précises.",
+        "link": "https://codequantumm.github.io/booki-starter-code-master-2/"
     },
     {
-        "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "image": "image2.jpg",
+        "title": "Riding Cities",
+        "text": "Mise à jour de la page web de Riding Cities en intégrant une nouvelle section sur les fondateurs et en adaptant l’existant pour améliorer l’expérience utilisateur.",
+        "link": "https://codequantumm.github.io/RidingCities-/"
     },
     {
         "image": "image3.png",
         "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "text": "Refonte complète du site de Kasa en React, avec développement des composants et des routes, en suivant des maquettes responsives et un backend NodeJS.",
+        "link": "https://github.com/codequantumm/Kasa-Projet_React.git"
+    },
+
+     {
+        "image": "image4.png",
+        "title": "Print It",
+        "text": "Dynamisation du site de l’imprimerie Print it en intégrant un carrousel interactif pour mettre en valeur ses services.",
+        "link": "https://codequantumm.github.io/PrintIt_JavaScript_Hamida_Nora/"
+    },
+
+     {
+        "image": "image5.png",
+        "title": "Sophie Bluel",
+        "text": "Renfort en développement front-end pour le site portfolio d’une architecte d’intérieur, avec l’intégration de nouvelles fonctionnalités interactives et la création d’une interface d’administration.",
+        "link": "https://github.com/codequantumm/Projet-6---Site-portfolio-de-Sophie-Bluel.git"
+    }, 
+
+     {
+        "image": "image6.png",
+        "title": "Eco Bliss Bath",
+        "text": "Mise en place d’une stratégie d’automatisation des tests pour le site e-commerce d’Eco Bliss Bath, avec des tests API, des smoke tests et des scénarios fonctionnels critiques, en utilisant Cypress",
+        "link": "https://github.com/codequantumm/Projet-10_Automatiser_des_tests_pour_une_boutique_en_lligne.git"
     }
 ]

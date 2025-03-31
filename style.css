@@ -5,7 +5,7 @@
 #portfolio,
 #contact {
     margin-top: 4rem;
-    padding-top: 4rem;
+    
 }
 #about h2,
 #skills h2,
@@ -19,7 +19,7 @@
 
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: #5b5b5b;
+    background-color: #661987;
 }
 
 /* hero background image */
@@ -32,7 +32,7 @@
 }
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
 .hero_desc {
     font-size: 2rem;
@@ -49,13 +49,27 @@
 /* about */
 .imageAboutPage {
     width: 100%;
-    max-width: 300px;
-    height: auto; 
-    display: block;
+    max-width: 200px; /* Taille max pour éviter qu'elle ne soit trop grande */
+    height: auto; /* Garde les proportions */
+    display: block; /* Évite les espaces indésirables sous l'image */
     margin: 0 auto;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+   
 }
+
+
+#about .row {
+    display: flex;
+    align-items: center; /* Aligne l'image et le texte au centre */
+    justify-content: center; /* Centre horizontalement */
+}
+
+.imageAboutPage {
+   
+}
+
 
 /* skills */
 .skillsText.card {
@@ -66,12 +80,6 @@
     width: 100%;
     height: 150px;
     object-fit: contain;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 #skills p {
@@ -93,8 +101,32 @@
 }
 
 /* portfolio */
-#portfolio p {
-    text-align: center;
+.portfolioContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+button.btn-custom:hover {
+    background-color: #661987; /* Orange plus foncé au survol */
+    color: white !important;
+    border: none !important;
 }
 
 /* contact */
@@ -102,9 +134,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center;
 }
 .contactColumn i {
-    color: #198754;
+    color: #661987;
 }
 
+
+
+
 /* footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+   
+}
