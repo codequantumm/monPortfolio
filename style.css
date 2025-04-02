@@ -5,14 +5,16 @@
 #portfolio,
 #contact {
     margin-top: 4rem;
-    
+
 }
+
 #about h2,
 #skills h2,
 #portfolio h2,
 #contact h2 {
     margin-bottom: 3rem;
 }
+
 #contact {
     padding-bottom: 4rem;
 }
@@ -30,13 +32,16 @@
     background-size: cover;
     position: relative;
 }
+
 /* text css above hero image*/
 .hero_title {
     font-size: 2.5rem;
 }
+
 .hero_desc {
     font-size: 2rem;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -49,33 +54,32 @@
 /* about */
 .imageAboutPage {
     width: 100%;
-    max-width: 200px; /* Taille max pour éviter qu'elle ne soit trop grande */
-    height: auto; /* Garde les proportions */
-    display: block; /* Évite les espaces indésirables sous l'image */
+    max-width: 200px;
+    height: auto;
+    display: block;
     margin: 0 auto;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-   
-}
 
+}
 
 #about .row {
     display: flex;
-    align-items: center; /* Aligne l'image et le texte au centre */
-    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+    justify-content: center;
 }
 
-.imageAboutPage {
-   
+#about h3 {
+    font-size: 19px;
 }
-
 
 /* skills */
 .skillsText.card {
     height: 350px;
     cursor: pointer;
 }
+
 .skillsText img {
     width: 100%;
     height: 150px;
@@ -85,19 +89,23 @@
 #skills p {
     text-align: center;
 }
+
 .skillsIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
 }
+
 .card-title {
     text-align: center;
 }
+
 .card:hover .skillsIcon {
-    color: #008000;
+    color: #661987;
 }
+
 .skillsText:hover {
-    border: 1px solid #008000;
+    border: 1px solid #661987;
 }
 
 /* portfolio */
@@ -109,7 +117,7 @@
 
 .image-container {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -124,9 +132,28 @@
 
 
 button.btn-custom:hover {
-    background-color: #661987; /* Orange plus foncé au survol */
+    background-color: #661987;
     color: white !important;
     border: none !important;
+}
+
+.btn-custom:focus,
+.btn-custom:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.text-center a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-center a:hover {
+    color: #661987;
+}
+
+p.card-text {
+    margin-top: 10px;
 }
 
 /* contact */
@@ -134,10 +161,11 @@ button.btn-custom:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+
 .contactColumn i {
     color: #661987;
 }
@@ -150,5 +178,5 @@ button.btn-custom:hover {
 footer {
     text-align: center;
     padding: 20px;
-   
+
 }

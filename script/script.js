@@ -23,7 +23,7 @@ function handleNavbarCollapse() {
     });
 }
 
-// Function to dynamically create HTML elements from the JSON file (Skills)
+// Function to dynamically create HTML elements from the JSON file
 function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
@@ -40,7 +40,7 @@ function createSkillsFromJSON() {
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
-                            <img src="./images/${item.image}" alt="${item.title}" loading="lazy" width="100%" height="150px" />
+                            <img src="./images/${item.image}" alt="${item.title}"/>
                             <h3 class="card-title mt-3">${item.title}</h3>
                             <p class="card-text mt-3">${item.text}</p>
                         </div>
@@ -59,17 +59,17 @@ function createSkillsFromJSON() {
             });
         });
 }
-
-// Function to dynamically create HTML elements from the JSON file (Portfolio)
+// Function to dynamically create HTML elements from the JSON file
 function createPortfolioFromJSON() {
     const container = document.querySelector("#portfolio .container");
+    let row = document.createElement("div");
+    row.classList.add("row");
 
+    // Load the JSON file
     fetch("data/portfolio.json")
         .then((response) => response.json())
         .then((data) => {
-            const row = document.createElement("div");
-            row.classList.add("row");
-
+            // Iterate through the JSON data and create HTML elements
             data.forEach((item, index) => {
                 const card = document.createElement("div");
                 card.classList.add("col-lg-4", "mt-4");
@@ -78,16 +78,12 @@ function createPortfolioFromJSON() {
                         <div class="image-container">
                             <img class="card-img-top" src="images/${item.image}" alt="${item.title}" loading="lazy"/>
                         </div>
-                        <button class="btn btn-custom btn-collapse mt-auto w-100"
-    data-bs-toggle="collapse"
-    data-bs-target="#collapse-${index}"
-    data-index="${index}">
-    ${item.title}
-    <i class="bi bi-chevron-down" id="chevron-${index}"></i>
-</button>
-
-                            <div id="collapse-${index}" class="collapse">
-                                <p class="card-text mt-3">${item.text}</p>
+                        <div class="card-body">
+                            <button class="btn btn-custom toggle-btn w-100" type="button" data-target="#content-${item.id}" w-100>
+                                ${item.title} <span class="chevron-icon bi bi-chevron-down"></span>
+                            </button>
+                            <div id="content-${item.id}" class="collapse">
+                                <p class="card-text">${item.text}</p>
                                 <div class="text-center">
                                     <a href="${item.link}">Voir mon projet</a>
                                 </div>
@@ -96,36 +92,34 @@ function createPortfolioFromJSON() {
                     </div>
                 `;
 
+                // Append the card to the current row
                 row.appendChild(card);
+
+                // If the index is a multiple of 3 or it's the last element, create a new row
+                if ((index + 1) % 3 === 0 || index === data.length - 1) {
+                    container.appendChild(row);
+                    row = document.createElement("div");
+                    row.classList.add("row");
+                }
             });
 
-            container.appendChild(row);
+            document.querySelectorAll(".toggle-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    const target = document.querySelector(this.getAttribute("data-target"));
+                    const icon = this.querySelector(".chevron-icon");
 
-            // Add event listener to handle the chevron icon toggle
-            document.addEventListener("DOMContentLoaded", () => {
-                document.querySelectorAll(".btn-collapse").forEach(button => {
-                    const index = button.getAttribute("data-index");
-                    const collapseElement = document.getElementById(`collapse-${index}`);
-                    const chevronIcon = document.getElementById(`chevron-${index}`);
-
-                    if (collapseElement) {
-                        collapseElement.addEventListener("show.bs.collapse", () => {
-                            chevronIcon.classList.remove("bi-chevron-down");
-                            chevronIcon.classList.add("bi-chevron-up");
-                        });
-
-                        collapseElement.addEventListener("hide.bs.collapse", () => {
-                            chevronIcon.classList.remove("bi-chevron-up");
-                            chevronIcon.classList.add("bi-chevron-down");
-                        });
+                    if (target.classList.contains("show")) {
+                        target.classList.remove("show");
+                        icon.classList.replace("bi-chevron-up", "bi-chevron-down");
+                    } else {
+                        target.classList.add("show");
+                        icon.classList.replace("bi-chevron-down", "bi-chevron-up");
                     }
+
                 });
             });
-
-
-
-
-        });
+        })
+        .catch((error) => console.error("Erreur lors du chargement du JSON:", error));
 }
 
 // Call the functions to execute the code
