@@ -17,7 +17,7 @@ async function loadJSON(path) {
 async function renderSkills() {
     const container = document.getElementById("skills-list");
     try {
-        const groups = await loadJSON("data/skills.json");
+        const groups = await loadJSON("skills.json");
         groups.forEach((group) => {
             const block = el("div");
             block.appendChild(el("h3", null, group.title));
@@ -71,7 +71,7 @@ async function renderProjects() {
         dev: document.getElementById("projects-dev"),
     };
     try {
-        const projects = await loadJSON("data/portfolio.json");
+        const projects = await loadJSON("portfolio.json");
         projects.forEach((project) => {
             const target = targets[project.category] || targets.dev;
             target.appendChild(buildCard(project));
