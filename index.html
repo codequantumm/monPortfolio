@@ -2,151 +2,122 @@
 <html lang="fr">
 
 <head>
-    <title>Mon Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nora Hamida – Testeuse logiciel</title>
     <meta name="description"
-        content="Mon site portfolio, où vous pouvez découvrir mes projets, compétences et services proposés en développement web et tests logiciels.">
-    <!-- linking css file -->
+        content="Portfolio de Nora Hamida, testeuse logiciel : tests de non-régression, automatisation E2E (Playwright, Cypress), CI/CD, projets de test et de développement web.">
+    <meta property="og:title" content="Nora Hamida – Testeuse logiciel">
+    <meta property="og:description"
+        content="Tests de non-régression, automatisation E2E et qualité des parcours e-commerce.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/nora.jpg">
     <link rel="stylesheet" href="style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" async>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nora Hamida</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contactez-moi</a>
-                    </li>
+<body id="top">
+    <a class="skip" href="#main">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="#top">Nora Hamida</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- main banner -->
-    <section class="bgimage" id="home" aria-label="Image de fond, d'une galaxie. Que la force soit avec moi">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h1 class="hero_title">Nora, l'exploratrice de bugs</h1>
-                    <p class="hero_desc">& Automaticienne de tests</p>
-                </div>
+    <main id="main">
+        <section class="hero wrap">
+            <div class="hero-text">
+                <h1>Nora Hamida</h1>
+                <p class="role">Testeuse logiciel — QA &amp; automatisation</p>
+                <p class="lead">Venue du marketing digital, j'ai fait de la qualité logicielle mon métier : tests de
+                    non-régression à chaque release, automatisation E2E avec Playwright et attention constante à
+                    l'expérience de l'utilisateur final.</p>
+                <p class="actions">
+                    <a class="btn" href="#projects">Voir mes projets</a>
+                    <a class="btn ghost" href="#contact">Me contacter</a>
+                </p>
             </div>
-        </div>
-    </section>
+            <figure class="portrait">
+                <img src="images/nora.jpg" alt="Portrait de Nora Hamida" width="280" height="368">
+            </figure>
+        </section>
 
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h2 class="text-center">A propos</h2>
-            <div class="row  justify-content-center">
-                <div class="col-lg-4">
-                    <img src="images/person.png" class="imageAboutPage" alt="photo de profil" width="100%"
-                        height="100%">
-                </div>
-
-                <div class="col-lg-8">
-                    <h3>🚀 Du Marketing Stratégique au Test Logiciel : Une Analyse au Service de la Qualité</h3>
-                    <p> Passionnée par la qualité logicielle, je navigue à travers les étoiles du code pour traquer les
-                        bugs et assurer des applications robustes. Exploratrice du test manuel et automatique,
-                        j’analyse, détecte et automatise pour offrir une expérience utilisateur sans faille.
-                    </p>
-
-                    <div class="row mt-3">
-                        <p> Ma transition vers le test logiciel s’appuie sur mon parcours en marketing et communication
-                            (Bac+5), où j’ai développé des compétences essentielles en analyse des besoins utilisateurs,
-                            en gestion de projet et en méthodologies Agile.
-                            Comprendre les attentes des utilisateurs et optimiser leur expérience ont toujours été au
-                            cœur
-                            de mon approche, et aujourd’hui, c’est à travers le test logiciel que je mets cette
-                            expertise en action.
-                            Actuellement en formation de testeur logiciel chez OpenClassrooms, je me prépare à
-                            l’obtention
-                            d’un diplôme Bac+2 en
-                            développement informatique, renforçant ainsi mes compétences en test manuel et automatisé.
-                        </p>
-                    </div>
-
-                    <div class="row mt-3">
-                        <p> Ma double expertise me permet d’aborder le test logiciel et le développement web avec une
-                            vision stratégique et centrée utilisateur,
-                            garantissant des applications non seulement performantes mais aussi adaptées aux attentes du
-                            marché. Toujours curieuse
-                            et en quête de nouvelles missions, je suis prête à relever de nouveaux défis ! 🚀✨
-                        </p>
-                    </div>
-                </div>
+        <section id="about" class="wrap section">
+            <h2>À propos</h2>
+            <div class="prose">
+                <p>Venue du marketing et de la communication (Bac +5), j'ai appris à analyser les besoins des
+                    utilisateurs avant de les traduire en actions. J'applique aujourd'hui ce regard à la qualité
+                    logicielle : comprendre comment un parcours est réellement vécu, puis vérifier qu'il fonctionne,
+                    release après release.</p>
+                <p>Après une formation de testeur logiciel chez OpenClassrooms (2024-2025), j'ai rejoint DIGIKOD en
+                    janvier 2026 comme QA Analyst. J'y ai repris les responsabilités QA d'un profil senior sur un
+                    e-commerce international. J'utilise l'IA comme assistant pour écrire les scripts d'automatisation.
+                </p>
             </div>
-    </section>
+        </section>
 
-    <!-- skills section-->
-    <section id="skills">
-        <div class="container">
-            <h2 class="text-center">Mes compétences</h2>
-        </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h2 class="text-center">Mes projets</h2>
-    </section>
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h2 class="text-center">Contactez-moi</h2>
-            <div class="row justify-content-center">
-
-                <div class="col-lg-3 mt-3 contactColumn">
-                    <a href="https://github.com/codequantumm" aria-label="Découvrez mon Github et mes projets">
-                        <i class="fa-brands fa-github fa-4x"></i>
-                    </a>
+        <section id="experience" class="wrap section">
+            <h2>Expérience actuelle</h2>
+            <article class="job">
+                <div class="job-head">
+                    <h3>QA Analyst – E-commerce &amp; Marketing Automation</h3>
+                    <p class="date">Depuis janvier 2026</p>
                 </div>
-                <div class="col-lg-3 mt-3 contactColumn">
-                    <a href="https://www.linkedin.com/in/nora-hamida-08a6738b/" aria-label="Contactez-moi sur linkedin">
-                        <i class="fa-brands fa-linkedin-in fa-4x"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p> © 2025. Nora Hamida. Tous droit réservés
-        </p>
+                <p class="org">DIGIKOD, CDI – Leudelange (Luxembourg), hybride</p>
+                <ul class="ticks">
+                    <li>Tests de non-régression à chaque release, tests fonctionnels des parcours multi-devises et des
+                        campagnes marketing, tests web et mobiles sur devices réels (BrowserStack).</li>
+                    <li>Automatisation E2E : migration de Cypress vers Playwright, scripts écrits avec l'assistance de
+                        l'IA, parcours exécutés dans Bamboo avec rapports et preuves envoyés sur Slack.</li>
+                    <li>Bilan de détection E2E : rapprochement des anomalies remontées en exploratoire avec les tests
+                        automatisés, pour identifier les écarts de couverture et prioriser les prochains tests selon
+                        les risques.</li>
+                    <li>Workshops avec les équipes métier et diagrammes de flux et de décision pour cadrer les règles,
+                        variantes et cas limites.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="skills" class="wrap section">
+            <h2>Compétences</h2>
+            <div id="skills-list" class="skills-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="projects" class="wrap section">
+            <h2>Projets</h2>
+            <h3 class="sub">Test et qualité</h3>
+            <div id="projects-test" class="cards"></div>
+            <h3 class="sub">Développement web</h3>
+            <div id="projects-dev" class="cards"></div>
+            <noscript>
+                <p class="note">Activez JavaScript pour afficher les compétences et les projets.</p>
+            </noscript>
+        </section>
+
+        <section id="contact" class="wrap section">
+            <h2>Contact</h2>
+            <p class="prose">Un projet, une question, une opportunité ? Le plus simple est de m'écrire sur LinkedIn.</p>
+            <ul class="contact-links">
+                <li><a href="https://www.linkedin.com/in/nora-hamida-08a6738b/" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/codequantumm" rel="noopener">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="wrap">
+        <p>© 2026 Nora Hamida. Tous droits réservés.</p>
     </footer>
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="script/script.js" defer></script>
 </body>
 
 </html>

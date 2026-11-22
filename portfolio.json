@@ -1,0 +1,70 @@
+[
+    {
+        "id": "1",
+        "category": "test",
+        "image": "ecoblissbath.png",
+        "title": "Eco Bliss Bath",
+        "tags": ["Cypress", "Tests API", "Smoke tests"],
+        "text": "Stratégie d'automatisation des tests d'une boutique en ligne : tests API, smoke tests et scénarios fonctionnels critiques avec Cypress. 3 bugs critiques identifiés sur l'API (stock, quantités).",
+        "link": "https://github.com/codequantumm/Projet-10_Automatiser_des_tests_pour_une_boutique_en_lligne.git"
+    },
+    {
+        "id": "2",
+        "category": "test",
+        "title": "PayForge",
+        "tags": ["Stratégie de test", "Scrum", "Non-régression"],
+        "text": "Stratégie de test d'une application bancaire agréée Banque de France (projet TOMSEN) : planification sur 6 sprints, campagnes de non-régression et validation des fonctionnalités critiques (authentification, API bancaires, transactions)."
+    },
+    {
+        "id": "3",
+        "category": "test",
+        "title": "724events",
+        "tags": ["Tests exploratoires", "Jira", "Lighthouse"],
+        "text": "Campagne de tests manuels et exploratoires (25+ scénarios) : 14 bugs critiques ou bloquants documentés dans Jira, avec un audit de performance Lighthouse et des recommandations de correction."
+    },
+    {
+        "id": "4",
+        "category": "dev",
+        "image": "kasa.png",
+        "title": "Kasa",
+        "tags": ["React", "Node.js"],
+        "text": "Refonte complète du site de Kasa en React, avec développement des composants et des routes, en suivant des maquettes responsives et un backend Node.js.",
+        "link": "https://github.com/codequantumm/Kasa-Projet_React.git"
+    },
+    {
+        "id": "5",
+        "category": "dev",
+        "image": "sophie-bluel.png",
+        "title": "Sophie Bluel",
+        "tags": ["JavaScript", "API"],
+        "text": "Renfort front-end pour le portfolio d'une architecte d'intérieur : nouvelles fonctionnalités interactives et création d'une interface d'administration.",
+        "link": "https://github.com/codequantumm/Projet-6---Site-portfolio-de-Sophie-Bluel.git"
+    },
+    {
+        "id": "6",
+        "category": "dev",
+        "image": "print-it.png",
+        "title": "Print It",
+        "tags": ["JavaScript"],
+        "text": "Dynamisation du site de l'imprimerie Print it avec un carrousel interactif pour mettre en valeur ses services.",
+        "link": "https://codequantumm.github.io/PrintIt_JavaScript_Hamida_Nora/"
+    },
+    {
+        "id": "7",
+        "category": "dev",
+        "image": "riding-cities.jpg",
+        "title": "Riding Cities",
+        "tags": ["HTML", "CSS"],
+        "text": "Mise à jour de la page de Riding Cities : nouvelle section sur les fondateurs et adaptation de l'existant pour améliorer l'expérience utilisateur.",
+        "link": "https://codequantumm.github.io/RidingCities-/"
+    },
+    {
+        "id": "8",
+        "category": "dev",
+        "image": "booki.png",
+        "title": "Booki",
+        "tags": ["HTML", "CSS"],
+        "text": "Intégration du site Booki en HTML et CSS pour trouver des hébergements et activités, à partir d'une maquette et de spécifications précises.",
+        "link": "https://codequantumm.github.io/booki-starter-code-master-2/"
+    }
+]
