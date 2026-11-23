@@ -1,32 +1,38 @@
 [
     {
-        "image": "html-css.jpg",
-        "title": "HTML - CSS",
-        "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS"
+        "title": "Tests",
+        "items": [
+            "Tests fonctionnels et exploratoires",
+            "Tests de non-régression",
+            "Plans et cas de test",
+            "Analyse de couverture, traçabilité des bugs",
+            "Tests API (Postman, Swagger)",
+            "Tests web et mobiles (BrowserStack)"
+        ]
     },
     {
-        "image": "js.jpg",
-        "title": "javascript",
-        "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires"
+        "title": "Automatisation",
+        "items": [
+            "Playwright, Cypress (TypeScript)",
+            "Génération de scripts assistée par IA (Codex CLI, MCP Playwright)",
+            "CI/CD avec Bamboo",
+            "Alertes automatiques Slack"
+        ]
     },
     {
-        "image": "react.jpg",
-        "title": "React",
-        "text": "Création d’applications React, création de composants et manipulation de leur état"
+        "title": "Outils et méthodes",
+        "items": [
+            "Jira, Git, GitHub, Docker",
+            "Scrum, Kanban",
+            "User stories, diagrammes de flux, documentation QA"
+        ]
     },
     {
-        "image": "gestion-de-projet.png",
-        "title": "Gestion de projet",
-        "text": "Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet"
-    },
-    {
-        "image": "optimisation-et-debug.png",
-        "title": "Optimisation et debug",
-        "text": "Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne"
-    },
-    {
-        "image": "test.png",
-        "title": "Test",
-        "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"
+        "title": "Développement",
+        "items": [
+            "HTML, CSS, JavaScript, TypeScript",
+            "React",
+            "Intégration responsive et accessible"
+        ]
     }
 ]

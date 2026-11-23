@@ -1,5 +1,5 @@
 // Construit les compétences et les projets à partir des fichiers JSON du dossier /data.
-// Pour modifier le contenu, il suffit d'éditer data/skills.json et data/portfolio.json.
+// Pour modifier le contenu, éditez data/skills.json et data/projects.json.
 
 function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -17,7 +17,7 @@ async function loadJSON(path) {
 async function renderSkills() {
     const container = document.getElementById("skills-list");
     try {
-        const groups = await loadJSON("skills.json");
+        const groups = await loadJSON("data/skills.json");
         groups.forEach((group) => {
             const block = el("div");
             block.appendChild(el("h3", null, group.title));
@@ -41,7 +41,7 @@ function buildCard(project) {
     const card = el("article", "card");
     if (project.image) {
         const img = el("img");
-        img.src = `images/${project.image}`;
+        img.src = `assets/images/${project.image}`;
         img.alt = "";
         img.loading = "lazy";
         card.appendChild(img);
@@ -71,7 +71,7 @@ async function renderProjects() {
         dev: document.getElementById("projects-dev"),
     };
     try {
-        const projects = await loadJSON("portfolio.json");
+        const projects = await loadJSON("data/projects.json");
         projects.forEach((project) => {
             const target = targets[project.category] || targets.dev;
             target.appendChild(buildCard(project));
